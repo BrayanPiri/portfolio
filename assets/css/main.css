@@ -13,18 +13,18 @@
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Amatic SC",  sans-serif;
+  --heading-font: "Inter",  sans-serif;
   --nav-font: "Inter",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #37373f; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ce1212; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #f5ede1; /* Un marrón muy claro para el fondo general */
+  --default-color: #5c4033; /* Marrón medio para el texto principal */
+  --heading-color: #8b5e3c; /* Un marrón más cálido para los títulos */
+  --accent-color: #d29b72; /* Un tono marrón claro y elegante para resaltar elementos */
+  --surface-color: #f0e6d2; /* Fondo de elementos en un tono crema suave */
+  --contrast-color: #ffffff; /* Mantiene el contraste con blanco */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -706,7 +706,7 @@ h6 {
   --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 120px 0;
+  padding: 85px 0;
   text-align: center;
   position: relative;
 }
@@ -1653,4 +1653,10 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+@media (min-width: 576px) {
+  .title-project {
+    padding: 85px 2px;
+  }
 }

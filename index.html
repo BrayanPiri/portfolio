@@ -4,13 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Starter Page - Yummy Bootstrap Template</title>
+  <title>Portafolio</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -26,64 +25,84 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Yummy
-  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="starter-page-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
+      <a class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">ChillyByte</h1>
+        
+      </a>
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero">Home<br></a></li>
           
           
-          <li><a href="#contact">Contact</a></li>
+          <!-- <li><a href="#contact">Contact</a></li> -->
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#book-a-table">Book a Table</a>
-
     </div>
   </header>
 
-  <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="container">
-        <h1>Proyecto</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a target="_blank" href="https://brayanpiri.github.io/restaurant-1/">Visualizar</a></li>
-            <li class="current">Proyecto</li>
-          </ol>
-        </nav>
+  <main id="hero" class="hero main">
+    <div class="row gy-4 justify-content-center">
+      <div class="col-lg-4">
+        <div class="container section-title title-project" data-aos="fade-up">
+          <p class="sitename">Proyectos</p>
+          <h3>Estos son algunos <span class="description-title">proyectos en los que estamos trabajando</span></h3>
+        </div><!-- End Section Title -->
       </div>
+      <div class="col-lg-8 text-center">
+      <!-- Page Title -->
+    <div class="page-title testimonials" data-aos="fade" data-aos-delay="100">
+      <div class="swiper init-swiper">
+        <script type="application/json" class="swiper-config">
+          {
+            "loop": true,
+            "speed": 600,
+            "autoplay": {
+              "delay": 5000
+            },
+            "slidesPerView": "auto",
+            "pagination": {
+              "el": ".swiper-pagination",
+              "type": "bullets",
+              "clickable": true
+            }
+          }
+        </script>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div>
+              <h2>Restaurante</h2>
+              <a target="_blank" href="https://brayanpiri.github.io/restaurant-1/">
+                <img width="45%" src="assets/img/projects/restaurant.png" alt="Restaurant">
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <h2>Hotel</h2>
+              <a target="_blank" href="https://brayanpiri.github.io/hotel-1/">
+                <img width="45%" src="assets/img/projects/hotel.png" alt="Hotel">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div><!-- End Page Title -->
-
-    <!-- Starter Section Section -->
-    <section id="starter-section" class="starter-section section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Starter Section</h2>
-        <p><span>Section Title</span> <span class="description-title">Direda Flowed</span></p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
       </div>
-
-    </section><!-- /Starter Section Section -->
+    </div>
+    <!-- Section Title -->
+    
+    
 
   </main>
 
@@ -91,24 +110,13 @@
 
     <div class="container">
       <div class="row gy-3">
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-geo-alt icon"></i>
-          <div class="address">
-            <h4>Address</h4>
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p></p>
-          </div>
-
-        </div>
 
         <div class="col-lg-3 col-md-6 d-flex">
           <i class="bi bi-telephone icon"></i>
           <div>
             <h4>Contact</h4>
             <p>
-              <strong>Phone:</strong> <span>+1 5589 55488 55</span><br>
-              <strong>Email:</strong> <span>info@example.com</span><br>
+              <strong>Email:</strong> <span>broscompany@gmail.com</span><br>
             </p>
           </div>
         </div>
@@ -118,7 +126,7 @@
           <div>
             <h4>Opening Hours</h4>
             <p>
-              <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
+              <strong>Mon-Fri:</strong> <span>11AM - 5PM</span><br>
               <strong>Sunday</strong>: <span>Closed</span>
             </p>
           </div>
@@ -138,14 +146,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Yummy</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
-      </div>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">ChillyByte</strong> <span>All Rights Reserved</span></p>
     </div>
 
   </footer>
